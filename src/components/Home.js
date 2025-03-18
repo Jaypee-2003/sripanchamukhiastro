@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaStarOfDavid, FaHandsHelping } from "react-icons/fa";
-import homeImage from "../assets/home.jpg";
+import homeImage from "../assets/home2.png";
 
 function Home() {
   return (
@@ -76,7 +76,7 @@ const styles = {
     justifyContent: "center",
     flexWrap: "wrap",
     padding: "40px 10%",
-    gap:"20px",
+    gap:"40px",
     position: "relative",
     background: "linear-gradient(to right, #8B0000, #ffcc00)",
     borderRadius: "0 0 50px 50px",
@@ -147,7 +147,7 @@ const styles = {
     maxWidth: "400px",
     height: "auto",
     borderRadius: "20px",
-    boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+    // boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
   },
   icon: {
     marginRight: "10px",

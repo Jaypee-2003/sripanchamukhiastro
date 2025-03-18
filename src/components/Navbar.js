@@ -98,7 +98,6 @@ function Navbar() {
 const styles = {
   nav: {
     position: "fixed",
-    top: "15px",
     left: "0",
     right: "0",
     width: "90%",
