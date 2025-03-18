@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sripanchamukhiastro/static/css/main.e6c13ad2.css",
+    "main.js": "/sripanchamukhiastro/static/js/main.966e1967.js",
+    "static/js/453.595f4285.chunk.js": "/sripanchamukhiastro/static/js/453.595f4285.chunk.js",
+    "static/media/home.jpg": "/sripanchamukhiastro/static/media/home.c606d2c61f9a7e136446.jpg",
+    "index.html": "/sripanchamukhiastro/index.html",
+    "main.e6c13ad2.css.map": "/sripanchamukhiastro/static/css/main.e6c13ad2.css.map",
+    "main.966e1967.js.map": "/sripanchamukhiastro/static/js/main.966e1967.js.map",
+    "453.595f4285.chunk.js.map": "/sripanchamukhiastro/static/js/453.595f4285.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.966e1967.js"
+  ]
+}
