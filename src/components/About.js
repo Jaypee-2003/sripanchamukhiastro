@@ -114,7 +114,7 @@ const services = [
 ];
 
 const stats = [
-  { value: "10000", label: "Happy Clients" },
+  { value: "9999", label: "Happy Clients" },
   { value: "20", label: "Years of Experience" },
   { value: "99", label: "Success Rate" }
 ];

@@ -47,7 +47,7 @@ const styles = {
     padding: "80px 10%",
     textAlign: "center",
     background: "linear-gradient(to right, #8B0000, #ffcc00)",
-    borderRadius: "50px 50 50px 50px",
+    borderRadius: "50px 50px 50px 50px",
 
   },
   title: {
