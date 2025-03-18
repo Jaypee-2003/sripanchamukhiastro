@@ -5,13 +5,11 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [activeSection, setActiveSection] = useState("home");
 
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      updateActiveSection();
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -37,30 +35,6 @@ function Navbar() {
     return () => document.removeEventListener("click", handleOutsideClick);
   }, [isOpen]);
 
-  // Smooth scrolling function
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-      setIsOpen(false); // Close mobile menu after clicking
-    }
-  };
-
-  // Update Active Section Based on Scroll Position
-  const updateActiveSection = () => {
-    const sections = ["home", "about", "services", "contact"];
-    for (let id of sections) {
-      const section = document.getElementById(id);
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 150 && rect.bottom >= 150) {
-          setActiveSection(id);
-          break;
-        }
-      }
-    }
-  };
-
   return (
     <>
       {/* Main Navbar */}
@@ -77,7 +51,7 @@ function Navbar() {
         {/* Logo */}
         <motion.h1 style={styles.logo}>🔱 Sri Panchamukhi Astro</motion.h1>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation - Hidden on Mobile */}
         {!isMobile && (
           <ul style={styles.navList} className="desktop-nav">
             {["Home", "About", "Services", "Contact"].map((item) => (
@@ -85,19 +59,17 @@ function Navbar() {
                 key={item}
                 whileHover={{ scale: 1.1, color: "#fff" }}
                 whileTap={{ scale: 0.95 }}
-                style={{
-                  ...styles.navItem,
-                  color: activeSection === item.toLowerCase() ? "#FFD700" : "#fff", // Highlight active section
-                }}
-                onClick={() => scrollToSection(item.toLowerCase())}
+                style={styles.navItem}
               >
-                {item}
+                <a href={`#${item.toLowerCase()}`} style={styles.navLink}>
+                  {item}
+                </a>
               </motion.li>
             ))}
           </ul>
         )}
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button (☰) - Hidden on Desktop */}
         {isMobile && (
           <motion.button
             className="menu-btn"
@@ -114,7 +86,7 @@ function Navbar() {
         )}
       </motion.nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (Animated) */}
       <AnimatePresence>
         {isOpen && isMobile && (
           <motion.div
@@ -132,13 +104,11 @@ function Navbar() {
                   key={item}
                   whileHover={{ scale: 1.1, color: "#fff" }}
                   whileTap={{ scale: 0.95 }}
-                  style={{
-                    ...styles.mobileNavItem,
-                    color: activeSection === item.toLowerCase() ? "#FFD700" : "#fff",
-                  }}
-                  onClick={() => scrollToSection(item.toLowerCase())}
+                  style={styles.mobileNavItem}
                 >
-                  {item}
+                  <a href={`#${item.toLowerCase()}`} style={styles.navLink} onClick={() => setIsOpen(false)}>
+                    {item}
+                  </a>
                 </motion.li>
               ))}
             </ul>
@@ -176,11 +146,14 @@ const styles = {
     listStyle: "none",
     display: "flex",
     gap: "20px",
-    cursor: "pointer",
   },
   navItem: {
     fontSize: "18px",
     fontWeight: "500",
+  },
+  navLink: {
+    color: "#fff",
+    textDecoration: "none",
     transition: "color 0.3s ease",
   },
   menuBtn: {
@@ -189,6 +162,8 @@ const styles = {
     background: "none",
     border: "none",
     cursor: "pointer",
+    display: "block",
+    zIndex: 1100,
   },
   mobileMenu: {
     position: "fixed",
@@ -225,7 +200,6 @@ const styles = {
   mobileNavItem: {
     fontSize: "20px",
     fontWeight: "bold",
-    cursor: "pointer",
   },
 };
 
