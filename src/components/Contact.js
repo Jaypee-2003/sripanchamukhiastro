@@ -133,13 +133,13 @@ const styles = {
     gap: "10px",
   },
   input: {
-    width: "100%",
+    width: "90%",
     padding: "12px",
     borderRadius: "8px",
     border: "1px solid #ddd",
   },
   textarea: {
-    width: "100%",
+    width: "90%",
     padding: "12px",
     borderRadius: "8px",
     border: "1px solid #ddd",
