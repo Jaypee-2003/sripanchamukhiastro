@@ -6,7 +6,6 @@ import homeImage from "../assets/home.jpg";
 function Home() {
   return (
     <section style={styles.hero}>
-      {/* Floating Particles for Effect */}
       <motion.div
         style={styles.particle}
         animate={{ opacity: [0.3, 0.7, 0.3], y: [0, 10, 0] }}
@@ -18,7 +17,6 @@ function Home() {
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      {/* Left Content - Heading & CTA */}
       <motion.div
         style={styles.textContainer}
         initial={{ opacity: 0, x: -80 }}
@@ -53,7 +51,6 @@ function Home() {
         </div>
       </motion.div>
 
-      {/* Right Side - Image */}
       <motion.div
         style={styles.imageContainer}
         initial={{ opacity: 0, x: 80 }}
@@ -76,35 +73,41 @@ const styles = {
   hero: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "center",
+    flexWrap: "wrap",
     padding: "40px 10%",
+    gap:"20px",
     position: "relative",
     background: "linear-gradient(to right, #8B0000, #ffcc00)",
     borderRadius: "0 0 50px 50px",
     color: "white",
     minHeight: "90vh",
     overflow: "hidden",
+    textAlign: "center",
   },
   textContainer: {
     maxWidth: "500px",
     zIndex: 2,
   },
   title: {
-    fontSize: "3rem",
+    fontSize: "2.5rem",
     fontWeight: "bold",
     marginBottom: "10px",
     textShadow: "2px 2px 8px rgba(255, 204, 0, 0.7)",
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
   },
   subtitle: {
-    fontSize: "1.3rem",
+    fontSize: "1.2rem",
     marginBottom: "20px",
     lineHeight: "1.6",
   },
   buttonContainer: {
     display: "flex",
+    justifyContent: "center",
     gap: "15px",
+    flexWrap: "wrap",
   },
   ctaButton: {
     display: "inline-flex",
@@ -137,9 +140,11 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     zIndex: 2,
+    marginTop: "30px",
   },
   heroImage: {
-    width: "400px",
+    width: "100%",
+    maxWidth: "400px",
     height: "auto",
     borderRadius: "20px",
     boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
@@ -157,6 +162,18 @@ const styles = {
     borderRadius: "50%",
     filter: "blur(15px)",
     zIndex: 1,
+  },
+  '@media (max-width: 768px)': {
+    hero: {
+      flexDirection: "column",
+      textAlign: "center",
+    },
+    textContainer: {
+      maxWidth: "100%",
+    },
+    buttonContainer: {
+      flexDirection: "column",
+    },
   },
 };
 

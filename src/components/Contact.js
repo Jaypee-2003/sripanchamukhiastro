@@ -69,6 +69,7 @@ const styles = {
   },
   container: {
     display: "flex",
+    flexDirection: "row",
     maxWidth: "1200px",
     width: "100%",
     gap: "50px",
@@ -76,12 +77,15 @@ const styles = {
     padding: "40px",
     borderRadius: "12px",
     boxShadow: "0px 10px 30px rgba(0,0,0,0.1)",
+    flexWrap: "wrap", // Allows wrapping on smaller screens
   },
   leftSection: {
     flex: 1,
+    minWidth: "300px", // Ensures it doesn't shrink too much
   },
   rightSection: {
     flex: 1,
+    minWidth: "300px", // Ensures it doesn't shrink too much
     padding: "20px",
   },
   title: {
@@ -149,6 +153,12 @@ const styles = {
     borderRadius: "8px",
     cursor: "pointer",
     fontWeight: "bold",
+  },
+  '@media (max-width: 768px)': {
+    container: {
+      flexDirection: "column",
+      gap: "30px",
+    },
   },
 };
 
