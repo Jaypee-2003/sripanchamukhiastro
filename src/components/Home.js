@@ -144,7 +144,7 @@ const styles = {
   },
   heroImage: {
     width: "100%",
-    maxWidth: "400px",
+    maxWidth: "500px",
     height: "auto",
     borderRadius: "20px",
     // boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
