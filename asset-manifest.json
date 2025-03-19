@@ -1,18 +1,22 @@
 {
   "files": {
     "main.css": "/sripanchamukhiastro/static/css/main.e6c13ad2.css",
-    "main.js": "/sripanchamukhiastro/static/js/main.4ecb574f.js",
+    "main.js": "/sripanchamukhiastro/static/js/main.21210a50.js",
     "static/js/453.595f4285.chunk.js": "/sripanchamukhiastro/static/js/453.595f4285.chunk.js",
+    "static/media/Palmistry.jpg": "/sripanchamukhiastro/static/media/Palmistry.5de10bc2d254fc3559fc.jpg",
     "static/media/home2.png": "/sripanchamukhiastro/static/media/home2.07c8db2f8b84411eb4a6.png",
+    "static/media/Vastu.jpg": "/sripanchamukhiastro/static/media/Vastu.798460b365b8b5c627d6.jpg",
+    "static/media/Spiritual.jpg": "/sripanchamukhiastro/static/media/Spiritual.8e77b07273a5631c87c8.jpg",
+    "static/media/Healing.jpg": "/sripanchamukhiastro/static/media/Healing.52e1fd3bd162a2c37b44.jpg",
     "static/media/love.jpeg": "/sripanchamukhiastro/static/media/love.5f42e2eb3038a71fb35f.jpeg",
     "static/media/caste.jpeg": "/sripanchamukhiastro/static/media/caste.fc9009c37acc1350d1fe.jpeg",
     "index.html": "/sripanchamukhiastro/index.html",
     "main.e6c13ad2.css.map": "/sripanchamukhiastro/static/css/main.e6c13ad2.css.map",
-    "main.4ecb574f.js.map": "/sripanchamukhiastro/static/js/main.4ecb574f.js.map",
+    "main.21210a50.js.map": "/sripanchamukhiastro/static/js/main.21210a50.js.map",
     "453.595f4285.chunk.js.map": "/sripanchamukhiastro/static/js/453.595f4285.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.4ecb574f.js"
+    "static/js/main.21210a50.js"
   ]
 }
