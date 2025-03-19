@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sripanchamukhiastro/static/css/main.e6c13ad2.css",
-    "main.js": "/sripanchamukhiastro/static/js/main.21210a50.js",
+    "main.js": "/sripanchamukhiastro/static/js/main.a5a31c74.js",
     "static/js/453.595f4285.chunk.js": "/sripanchamukhiastro/static/js/453.595f4285.chunk.js",
     "static/media/Palmistry.jpg": "/sripanchamukhiastro/static/media/Palmistry.5de10bc2d254fc3559fc.jpg",
     "static/media/home2.png": "/sripanchamukhiastro/static/media/home2.07c8db2f8b84411eb4a6.png",
@@ -12,11 +12,11 @@
     "static/media/caste.jpeg": "/sripanchamukhiastro/static/media/caste.fc9009c37acc1350d1fe.jpeg",
     "index.html": "/sripanchamukhiastro/index.html",
     "main.e6c13ad2.css.map": "/sripanchamukhiastro/static/css/main.e6c13ad2.css.map",
-    "main.21210a50.js.map": "/sripanchamukhiastro/static/js/main.21210a50.js.map",
+    "main.a5a31c74.js.map": "/sripanchamukhiastro/static/js/main.a5a31c74.js.map",
     "453.595f4285.chunk.js.map": "/sripanchamukhiastro/static/js/453.595f4285.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.21210a50.js"
+    "static/js/main.a5a31c74.js"
   ]
 }
