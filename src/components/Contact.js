@@ -86,7 +86,7 @@ const styles = {
   rightSection: {
     flex: 1,
     minWidth: "300px", // Ensures it doesn't shrink too much
-    padding: "20px",
+    // padding: "20px",
   },
   title: {
     fontSize: "2.5rem",
